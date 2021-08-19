@@ -21,4 +21,6 @@ xhr.onload = function () {
         console.log(xhr.responseText)
     }
 };
+
+console.log(xhr, '<<<<the xhr')
 xhr.send()
