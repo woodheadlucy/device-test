@@ -5,6 +5,7 @@
 var url = window.location.href;
 //getting the access token from url
 console.log(url, '<<url')
+alert(url)
 var access_token = typeof url !== "undefined" && url.split("#")[1].split("=")[1].split("&")[0];
 // get the userid
 var userId = typeof url !== "undefined" && url.split("#")[1].split("=")[2].split("&")[0];
@@ -25,4 +26,4 @@ xhr.onload = function () {
 };
 
 alert(xhr)
-xhr.send()
+// xhr.send()
