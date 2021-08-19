@@ -19,6 +19,8 @@ xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
 xhr.onload = function () {
     if (xhr.status === 200) {
         console.log(xhr.responseText)
+        document.write(xhr.responseText)
+
     }
 };
 
